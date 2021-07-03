@@ -84,7 +84,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- Site Metas -->
-   <title>Life Care - Responsive HTML5 Multi Page Template</title>
+   <title>She Bonds - Connect her with Experts</title>
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
@@ -107,8 +107,6 @@
    <link rel="stylesheet" href="css/custom.css">
    <!-- Modernizer for Portfolio -->
    <script src="js/modernizer.js"></script>
-
-  <title>TARUC Events - Login or Register</title>
   <style>
     .login_button{
       font-family: Times New Roman;

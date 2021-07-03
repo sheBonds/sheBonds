@@ -916,7 +916,6 @@ body.clinic_version .footer .widget-title h3 {
     padding-left: 40px;
 }
 .newsletter-form input {
-    display: inline-block;
     height: 50px;
     width: 80%;
     padding: 5px 20px;
@@ -935,7 +934,6 @@ body.clinic_version .footer .widget-title h3 {
     border: none;
     font-size: 24px;
     position: relative;
-    display: inline-block;
     float: left;
     text-align: center;
 }
