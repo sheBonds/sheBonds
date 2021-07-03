@@ -1,3 +1,5 @@
+<!-- spare; no use -->
+
 <?php
    //Connect database
    include "database/connect.php";
