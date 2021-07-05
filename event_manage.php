@@ -108,7 +108,7 @@ background-image: url(images/service-bg.png);
       
          
        
-      <div id="service" class="services wow fadeIn">
+      <div id="service" class="services wow fadeIn" style="margin-top: 15rem;">
          <div class="container">
             <div class="row">
 

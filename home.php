@@ -123,7 +123,7 @@ if($uid=='' || $uid==null){
                <div class="service-time one" style="background:#2895f1;">
                   <span class="info-icon"><i class="fa fa-user-md" aria-hidden="true"></i></span>
                   <h3>Talk to Doctors</h3>
-                  <p>Ask questions about your problems, issues and any small symptoms. add content</p>
+                  <p>Make informed health choices by connecting with fact-based, expert-sourced discussion forums to discuss your issues, symptoms, home remedies and treatment options.</p>
                </div>
             </div>
          </div>
@@ -132,7 +132,7 @@ if($uid=='' || $uid==null){
                <div class="service-time middle" style="background:#0071d1;">
                   <span class="info-icon"><i class="fa fa-calendar-o" aria-hidden="true"></i></span>
                   <h3>Attend Events</h3>
-                  <p>Listen to experts etc. add content</p>
+                  <p>We believe in the power of the community to solve most pressing issues related to women's healthcare. Discover and learn from today’s innovative health leaders through live events. Join us in transforming the next decade of women's health, together.</p>
                </div>
             </div>
          </div>
@@ -141,7 +141,7 @@ if($uid=='' || $uid==null){
                <div class="service-time three" style="background:#0060b1;">
                   <span class="info-icon"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
                   <h3>Get to know More</h3>
-                  <p>Read through blogs, nutrition etc. add content</p>
+                  <p>Read through blogs, gamify with quizes. Test your knowledge. It's more like we are disucssion with a coffee! <a href="curl.php"><i class="fa fa-heartbeat" aria-hidden="true"></i></a></p>
                </div>
             </div>
          </div>
@@ -229,7 +229,7 @@ if($uid=='' || $uid==null){
                <div class="testimonial clearfix">
                   <div class="desc">
                      <h3><i class="fa fa-quote-left"></i> An Apple a Day keeps doctor away!</h3>
-                     <p class="lead">Eat healthy food etc...</p>
+                     <p class="lead"> You likely know the familiar expression, “An apple a day keeps the doctor away.” In fact, Notes and Queries magazine was the first to publish the original quote: “Eat an apple on going to bed, and you’ll keep the doctor from earning his bread.</p>
                   </div>
                   <div class="testi-meta">
                      <img src="images/testi_01.png" alt="" class="img-responsive alignleft">
@@ -243,8 +243,8 @@ if($uid=='' || $uid==null){
             <div class="col-md-6 col-sm-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                <div class="testimonial clearfix">
                   <div class="desc">
-                     <h3><i class="fa fa-quote-left"></i>Blog 2</h3>
-                     <p class="lead">Content 2</p>
+                     <h3><i class="fa fa-quote-left"></i>What is breast cancer?</h3>
+                     <p class="lead">Breast cancer is the most common invasive cancer in women and the second leading cause of cancer death in women after lung cancer.</p>
                   </div>
                   <div class="testi-meta">
                      <img src="images/testi_02.png" alt="" class="img-responsive alignleft">
@@ -262,12 +262,12 @@ if($uid=='' || $uid==null){
             <div class="col-md-6 col-sm-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                <div class="testimonial clearfix">
                   <div class="desc">
-                     <h3><i class="fa fa-quote-left"></i>blog 3</h3>
-                     <p class="lead">content 3</p>
+                     <h3><i class="fa fa-quote-left"></i> Key vitamins to manage your Endometriosis Symptoms</h3>
+                     <p class="lead">Endometriosis is a common condition in which tissue similar to the lining of the uterus grows outside the womb and can cause pelvic pain and difficulty getting pregnant. These Key Vitamins Can Help You Manage Endometriosis Symptoms.</p>
                   </div>
                   <div class="testi-meta">
                      <img src="images/testi_03.png" alt="" class="img-responsive alignleft">
-                     <h4>Amanda DOE <small>- Fitness Trainer</small></h4>
+                     <h4>Amanda DOE <small>- Nutritionist</small></h4>
                   </div>
                   <!-- end testi-meta -->
                </div>
@@ -277,12 +277,12 @@ if($uid=='' || $uid==null){
             <div class="col-md-6 col-sm-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
                <div class="testimonial clearfix">
                   <div class="desc">
-                     <h3><i class="fa fa-quote-left"></i> blog 4</h3>
-                     <p class="lead">content 4</p>
+                     <h3><i class="fa fa-quote-left"></i>Importance of focusing on your emotional wellbeing</h3>
+                     <p class="lead">It’s important to remember that emotional health is not fixed: it fluctuates over time, depending on your physical health, your experiences, and a myriad of things that might be happening in your personal, or work life.</p>
                   </div>
                   <div class="testi-meta">
                      <img src="images/testi_01.png" alt="" class="img-responsive alignleft">
-                     <h4>Martin Johnson <small>- Dermatologist</small></h4>
+                     <h4>Martin Johnson <small>- Psychiatrist</small></h4>
                   </div>
                   <!-- end testi-meta -->
                </div>
@@ -368,13 +368,13 @@ if($uid=='' || $uid==null){
 
 
                <!-- <div class="col-md-8 col-lg-8 col-xlg-8">
-                   	 <br>  
+                     <br>  
                    <h4>hii</h4>
 
                    </div>
                     <div class="col-md-4 col-lg-4 col-xlg-4">
-                    	  <a href="quiz.html" ><button class="btn btn-default btn-lg float-right" type="submit"> Start </button></a>
-                    	 
+                        <a href="quiz.html" ><button class="btn btn-default btn-lg float-right" type="submit"> Start </button></a>
+                       
                    </div>
                   <hr style="background-color : white;"> -->
 
@@ -522,14 +522,14 @@ if($uid=='' || $uid==null){
                <button type="button" class="close" data-dismiss="modal">&times;</button>
                <h4 class="modal-title">Select Options </h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" id="model1">
 
                <div id="quiz"></div>
-               <button id="submit">Submit Quiz</button>
+               <button id="submit" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1">Submit Quiz</button>
                <div id="results"></div>
             </div>
             <div class="modal-footer">
-               <button type="submit" name="join" class="btn btn-default" data-dismiss="modal">Cancel</button>
+               <button type="submit" name="join"class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1" data-dismiss="modal">Cancel</button>
             </div>
          </div>
 
@@ -549,14 +549,14 @@ if($uid=='' || $uid==null){
                <button type="button" class="close" data-dismiss="modal">&times;</button>
                <h4 class="modal-title">Select Options </h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" id="model2">
 
                <div id="quiz2"></div>
-               <button id="submit2">Submit Quiz</button>
+               <button id="submit2" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1">Submit Quiz</button>
                <div id="results2"></div>
             </div>
             <div class="modal-footer">
-               <button type="submit" name="join" class="btn btn-default" data-dismiss="modal">Cancel</button>
+               <button type="submit" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1" name="join"  data-dismiss="modal">Cancel</button>
             </div>
          </div>
 
@@ -574,14 +574,14 @@ if($uid=='' || $uid==null){
                <button type="button" class="close" data-dismiss="modal">&times;</button>
                <h4 class="modal-title">Select Options </h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" id="model3">
 
                <div id="quiz3"></div>
-               <button id="submit3">Submit Quiz</button>
+               <button id="submit3" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1">Submit Quiz</button>
                <div id="results3"></div>
             </div>
             <div class="modal-footer">
-               <button type="submit" name="join" class="btn btn-default" data-dismiss="modal">Cancel</button>
+               <button type="submit"  name="join" class="btn btn-default" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1" data-dismiss="modal">Cancel</button>
             </div>
          </div>
 
@@ -847,8 +847,22 @@ if($uid=='' || $uid==null){
             });
 
             // show number of correct answers out of total
-            resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+            resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length} 
+            <h2>We recommend you to attend this event to know more about your health.</h2>
+            <h1 style="margin-left:90px; font-weight:bold ">Precautions to take while pregnancy</h1>
+            
+            <img style="width:40%;height:30%;margin-left:30%" src="images/event_1.jpg" alt="Italian Trulli">
+            
+            <div class="form-group">
+                     <div class="center"> <button type="button" data-toggle="modal" style="text-align: center;"
+                     onclick="location.href='events.php'" data-target="events.php">Know More</button></div>
+                  </div>
+            `;
 
+            
+    document.getElementById("myButton").onclick = function () {
+        location.href = "events.php";
+    };
 
 
 
@@ -884,7 +898,7 @@ if($uid=='' || $uid==null){
             });
 
             // show number of correct answers out of total
-            resultsContainer2.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+            resultsContainer2.innerHTML = `${numCorrect} out of ${myQuestions.length} <p>ajhs</p>`;
 
 
 
@@ -920,78 +934,79 @@ if($uid=='' || $uid==null){
             });
 
             // show number of correct answers out of total
-            resultsContainer3.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+            resultsContainer3.innerHTML = `${numCorrect} out of ${myQuestions.length}<p>`;
 
          }
 
          const quizContainer = document.getElementById('quiz');
          const quizContainer2 = document.getElementById('quiz2');
          const quizContainer3 = document.getElementById('quiz3');
-         const resultsContainer = document.getElementById('results');
-         const resultsContainer2 = document.getElementById('results2');
-         const resultsContainer3 = document.getElementById('results3');
+         const resultsContainer = document.getElementById('model1');
+         const resultsContainer2 = document.getElementById('model2');
+         const resultsContainer3 = document.getElementById('model3');
          const submitButton = document.getElementById('submit');
          const submitButton2 = document.getElementById('submit2');
          const submitButton3 = document.getElementById('submit3');
 
          const myQuestions = [
             {
-               question: "Who invented JavaScript?",
+               question: "What does PCOS mean?",
                answers: {
-                  a: "Douglas Crockford",
-                  b: "Sheryl Sandberg",
-                  c: "Brendan Eich"
+                  a: "Polycystic Ovary Syndrome",
+                  b: "Polyvin Ovary system",
+                  c: "Polycycle ovary syndrome"
+               },
+               correctAnswer: "a"
+            },
+            {
+               question: "Can PCOS affect your chances of getting pregnant?",
+               answers: {
+                  a: "Yes",
+                  b: "No",
+                  c: "Depends"
                },
                correctAnswer: "c"
             },
             {
-               question: "Which one of these is a JavaScript package manager?",
+               question: "Is there a complete cure for PCOS?",
                answers: {
-                  a: "Node.js",
-                  b: "TypeScript",
-                  c: "npm"
+                  a: "Yes",
+                  b: "No",
+                  c: "Maybe",
+                  d: "None"
                },
-               correctAnswer: "c"
-            },
-            {
-               question: "Which tool can you use to ensure code quality?",
-               answers: {
-                  a: "Angular",
-                  b: "jQuery",
-                  c: "RequireJS",
-                  d: "ESLint"
-               },
-               correctAnswer: "d"
+               correctAnswer: "b"
             }
          ];
 
 
          const myQuestions2 = [
             {
-               question: "Who ?",
+               question: "How PCOS be managed?",
                answers: {
-                  a: "Douglas Crockford",
-                  b: "Sheryl Sandberg",
-                  c: "Brendan Eich"
-               },
-               correctAnswer: "b"
-            },
-            {
-               question: "Which one of these is a JavaScript package manager?",
-               answers: {
-                  a: "Node.js",
-                  b: "TypeScript",
-                  c: "npm"
+                  a: "the appropriate treatment at a fertility clinic in Denver depending on symptoms",
+                  b: "Weight loss may help improve the symptoms in a lot of women with PCOS",
+                  c: "Both"
                },
                correctAnswer: "c"
             },
             {
-               question: "Which tool can you use to ensure code quality?",
+               question: "Which are the criteria determine if you have PCOS?",
                answers: {
-                  a: "Angular",
-                  b: "jQuery",
-                  c: "RequireJS",
-                  d: "ESLint"
+                  a: " Irregular menstrual cycles  since puberty",
+                  b: "Signs of androgen excess. ",
+                  c: "PCOS appearing ovaries by ultrasound.",
+                  d: "All of the above"
+               },
+               correctAnswer: "d"
+            },
+            {
+               question: "If you have PCOS what medical problems are you at risk for?",
+               answers: {
+                  a: "Hypertension",
+                  b: " Diabetes",
+                  c: "Impaired glucose tolerance ",
+                  d: "All of the above",
                },
                correctAnswer: "d"
             }
@@ -999,30 +1014,30 @@ if($uid=='' || $uid==null){
 
          const myQuestions3 = [
             {
-               question: "what",
+               question: "If a woman is overweight, will losing that excess weight help her to become pregnant?",
                answers: {
-                  a: "Douglas Crockford",
-                  b: "Sheryl Sandberg",
-                  c: "Brendan Eich"
+                  a: " Yes",
+                  b: "No",
+                  c: "Maybe"
                },
                correctAnswer: "c"
             },
             {
-               question: "Which one of these is a JavaScript package manager?",
+               question: "Is it true that pregnancy cures PCOS?",
                answers: {
-                  a: "Node.js",
-                  b: "TypeScript",
-                  c: "npm"
+                  a: " Yes",
+                  b: "No",
+                  c: "Maybe"
                },
-               correctAnswer: "c"
+               correctAnswer: "b"
             },
             {
-               question: "Which tool can you use to ensure code quality?",
+               question: "What are the symptoms of PCOS?",
                answers: {
-                  a: "Angular",
-                  b: "jQuery",
-                  c: "RequireJS",
-                  d: "ESLint"
+                  a: "Irregular periods",
+                  b: "Excess male hormone (androgen)",
+                  c: "Polycystic ovaries",
+                  d: "All of the above"
                },
                correctAnswer: "d"
             }

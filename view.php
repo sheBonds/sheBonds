@@ -132,7 +132,7 @@
        <a href='admin_manage.php'>Back</a>
        
 
-      <div id="service" class="services wow fadeIn">
+      <div id="service" class="services wow fadeIn" style="margin-top: 15rem;">
          <div class="container">
             <div class="row">
 
@@ -144,10 +144,10 @@ if (isset($_POST['View'])) {
 	<table align="center" style="background-color: white;" class="table" cellpadding="20px" cellspacing="6px">
 			<tr>
 				<th width="4%">No.</th>
-				<th width="25%">Name</th>
-				<th width="11%">Date</th>
-				<th width="11%">Time</th>
-				<th width="12%">Category</th>
+				<th width="25%">Emailid</th>
+				<th width="11%">Expectations</th>
+				<th width="11%">Mobileno</th>
+				<th width="12%">NAme</th>
 				
 			</tr>
 

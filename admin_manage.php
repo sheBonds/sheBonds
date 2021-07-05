@@ -199,7 +199,10 @@
 	<div class="row">
 
 			 <div class="col-md-4 col-lg-4 col-xlg-4">
-			 	<img  style="padding: 2rem; " id="img" src="https://thumbs.dreamstime.com/z/selection-various-paleo-diet-products-healthy-nutrition-balanced-food-background-148722795.jpg" class="img-responsive card-img" >
+			 	<br>
+			 	<br>
+			 	<br>
+			 	<img  style="padding: 2rem; height:25rem;"class="" id="img" src="<?php echo $row['EventImageLink'];?>"  class="img-responsive card-img">
 			 </div>
                         
 
@@ -320,19 +323,13 @@
                  	<div class="col-md-3">
                  	</div>
                   <div class="col-md-3">	
-				  <input type="submit" name="update" value="update"  class="btn small" title="Submit Your Message!">
+				  <input type="submit" name="update" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1" value="update"  class="btn small" title="Submit Your Message!">
 				  	</div>
 				   <div class="col-md-3">	
 				 	<!-- <input type="reset" class="btn small" name="cancel" value="Cancel"> --> 
 					</div>
 					 <div class="col-md-3">	
-				 	<form action="view.php" style="padding: 2rem;"method="POST">
-			
-			          
-
-			          <input type="text"  value="<?php echo $row['EventID']; ?>"  name="a_eventid" hidden>
-					<input type="submit" class="btn small" name="View" value="View">
-				</form>
+				 	
 					</div>
 
 					</form>
@@ -345,7 +342,13 @@
 					</div>
 
 
+<form action="view.php" style="padding: 2rem;"method="POST">
+			
+			          
 
+			          <input type="text"  value="<?php echo $row['EventID']; ?>"  name="a_eventid" hidden>
+					<input type="submit" class="btn small" name="View" value="View" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1">
+				</form>
 
 
 
@@ -353,8 +356,7 @@
 
 
  						<!-- <input onclick=" #myModal" id="submitButton" class="btn small" title="Register!"> -->
-                            <br>
-                            <br>
+
 <!-- Model -->
 
 
@@ -393,7 +395,11 @@
 
 
 
-
+ <br>
+                            <br>
+                            <br>
+                            <br>
+                            
 
 
 

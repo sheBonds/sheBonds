@@ -10,6 +10,8 @@
 		echo "<script type='text/javascript'>alert('$message');</script>";
 		header("Refresh: 0, login_register.php");
 	}
+
+	 $utype=$_SESSION['UserType'];
 ?>
 
 <!DOCTYPE html>
@@ -123,7 +125,7 @@
 
 <body class="clinic_version">
 
-	<div id="service" class="services wow fadeIn">
+	<div id="service" class="services wow fadeIn" style="margin-top: 10rem;">
 		<div class="container">
 			<div class="row message-box">
 
@@ -166,7 +168,7 @@
 							</li>
 
 							<li><b>Email: </b>
-								<?php $row['UserEmail'] ;?>
+								<?php echo $row['UserEmail'] ;?>
 							</li>
 
 							<li><b>Date of Birth : </b>
@@ -182,12 +184,8 @@
 						</ul>
 
 						<div class="dropdown">
-							<input type="submit" name="editprofile" value="Edit Profile">
-							<div class="dropdown-content" align="center">
-								<input type="button" class="dropdown-button" id="epicture" value="Profile Picture">
-								<input type="button" class="dropdown-button" id="ename" value="Name">
-								<input type="button" class="dropdown-button" id="eemail" value="E-mail">
-							</div>
+							<input type="submit" name="editprofile" value="Edit Profile" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1">
+							
 						</div>
 
 
@@ -201,6 +199,55 @@
 
 
 			</div>
+
+
+			<?php
+
+		 if ($utype=='Admin'){ 
+		 	
+
+
+		 	$conn = mysqli_connect($servername, $username, $password, $dbname);
+				//Read user booking detail
+				$read_user_booking = "SELECT * FROM forum  INNER JOIN  user_details  on forum.topic=user_details.Speciality where forum.time = date('d-m-Y')";
+
+				// echo date("Y-m-d");
+
+
+				$result_read_user_booking = mysqli_query($conn, $read_user_booking);
+				if ($result_read_user_booking){
+					while($row = mysqli_fetch_array($result_read_user_booking, MYSQLI_ASSOC)){
+
+						// echo "post.php?id=".$row['id'];
+						// echo $row['UserID'];
+						if($uid==$row['UserID']){
+						?>
+
+								<br>
+							  <h3 class="desc">Do you like to answer Question posted by <?php echo $row['author']; ?> on <?php echo $row['topic']; ?>
+
+							  <a href="post.php?id=<?php echo $row['id']; ?>" style="color: blue;">yessss
+							</a>
+							    </h3>
+
+							  
+						<?php
+
+					}
+
+					}
+				}
+				else{
+					echo "fail";
+				}
+
+
+
+
+		 }
+
+		?>
+	</div>
 		</div>
 	</div>
 
@@ -330,6 +377,8 @@
 			</div>
 		</div>
 	</div>
+
+
 
 	<footer id="footer" class="footer-area wow fadeIn">
 		<div class="container">

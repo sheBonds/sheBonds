@@ -174,7 +174,9 @@
                         <div id="bor" class="row">
                            <!-- <div class="col-lg-5 "> -->
                            <img style="padding: 2rem; height:30rem;" id="img"
-                              src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80"
+                                src=" <?php
+                        echo $row['EventImageLink'];
+                     ?>"
                               class="img-responsive card-img">
 
                            <p class="lead" style="text-align: justify ; margin: 2rem;">
@@ -245,7 +247,9 @@
                            <div id="bor" class="row">
                               <!-- <div class="col-lg-5 "> -->
                               <img style="padding: 2rem; height:30rem;" id="img"
-                                 src="https://lh3.googleusercontent.com/proxy/YLfSsKTRriE06jPt2uwHzg_T5nvDpJd3Fuwmi8zUSZQ_7f6E1-bxuanunri8MVsPVJtMeW_qfs9j9sKh1Bk1ppDctycC_hd7OJK2U949tfQpaXLePq7OPhF84P-uK8aZZq6ar73v"
+                                   src=" <?php
+                        echo $row['EventImageLink'];
+                     ?>"
                                  alt="loding" class="img-responsive card-img">
 
                               <p class="lead" style="text-align: justify ; margin: 2rem;">

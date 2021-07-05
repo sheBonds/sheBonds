@@ -43,7 +43,7 @@
 <script src="js/modernizer.js"></script>
 <style type="text/css">
    .card {
-      border-radius: 4px;
+      border-radius: 10px;
       background: #fff;
       box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
       transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
@@ -69,8 +69,9 @@
    .ee {
       border: solid;
       border-color: lightblue;
-      /*background-color: lightblue;*/
-      background-image: url(images/service-bg.png);
+      background-color: lightblue;
+      border-radius: 10px;
+      /*background-image: url(images/service-bg.png);*/
    }
 
 
@@ -165,31 +166,41 @@
    <div id="testimonials" class="section wb wow fadeIn">
       <div class="container">
          <div class="heading">
-            <span class="icon-logo"><img src="images/icon.png" alt="#"></span>
-            <h2>Ask</h2>
+          <br>
+          <br>
+          <br>
+            <h2>Get Answers of all your Queeries </h2>
          </div>
          <!-- end title -->
          <div class="row">
+               <a href="new_question.php" data-scroll class="btn btn-light btn-radius btn-brd grd1 effect-1 center">Ask a question?</a>
 
-            <a href='new_question.php'>Have a question?</a>"
+               
 
+           
 
             <?php
                $con = mysqli_connect("localhost","root","","");
                mysqli_select_db($con,"forum");
                   $z1="SELECT DISTINCT topic FROM forum ORDER BY topic ASC";
                                  $zz2=mysqli_query($con, $z1);
+
+
+
             ?>
 
-            <br>
-            <br>
-            <br>
-            <form action="forum.php" method="post">
+
+               <br>
+                <br>
+               <br>
+                <br>
+               <br>
+            <form action="forum.php" style="margin: 200px; " method="post">
                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
                </div>
                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                   <select class="form-control" id="Place" name="country">
-                     <option value="0" selected="selected">Select Country</option>
+                     <option value="0" selected="selected">Select Category</option>
                      <?php
                         if(mysqli_num_rows($zz2)>0){
                         
@@ -240,7 +251,10 @@
                      while($row=mysqli_fetch_assoc($res)){
                         
                         $z="select COUNT(comment) from comments where post_id=$row[id]";
-                        $ans="select * from comments where post_id=$row[id]";
+                        // $ans="select * from comments where post_id=$row[id]" ;$read_user_booking = "SELECT * FROM forum  INNER JOIN  user_details  on forum.topic=user_details.Speciality where forum.time = date('d-m-Y')";
+
+                        $ans="select * from comments INNER JOIN user_details on comments.author =user_details.UserNo where user_details.UserType='Admin'" ;
+
                         $zz=mysqli_query($con, $z);
 
                         $zzz=mysqli_fetch_array($zz);
@@ -298,7 +312,25 @@
 
                               <div><small>
                                     <?php  echo $ansfin['time']."  " ; ?> <b>
-                                       <?php  echo $ansfin['author']; ?>
+                                       <?php  
+
+                                          $connn = mysqli_connect("localhost","root","","");
+                                          mysqli_select_db($connn,"forum");
+                                       $id=$ansfin['author'];
+                                       // echo  $id;
+
+                                          // echo"hhhh";
+                                         $insert_query3 = "SELECT * FROM `user_details` WHERE `UserNo`='$id'";
+
+                        $res3=mysqli_query($connn, $insert_query3);
+                         $row3=mysqli_fetch_assoc($res3);
+
+
+
+                            echo $row3['UserFullName'];
+
+
+                                        ?>
                                     </b>
                                  </small></div>
 
@@ -421,7 +453,25 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
               }
             ?>
 
-            <div ><small> <?php  echo $ansfin['time']."  " ; ?> <b><?php  echo $ansfin['author']; ?></b></small></div>
+            <div ><small> <?php  echo $ansfin['time']."  " ; ?> <b><?php  
+
+                                          $connn = mysqli_connect("localhost","root","","");
+                                          mysqli_select_db($connn,"forum");
+                                       $id=$ansfin['author'];
+                                       // echo  $id;
+
+                                          // echo"hhhh";
+                                         $insert_query3 = "SELECT * FROM `user_details` WHERE `UserNo`='$id'";
+
+                        $res3=mysqli_query($connn, $insert_query3);
+                         $row3=mysqli_fetch_assoc($res3);
+
+
+
+                            echo $row3['UserFullName'];
+
+
+                                        ?></b></small></div>
 
                </div>
 

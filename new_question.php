@@ -109,7 +109,7 @@
 
 
 
-   <div id="service" class="services wow fadeIn">
+   <div id="service" class="services wow fadeIn"  style="margin-top: 10rem;">
       <div class="container">
          <div class="row">
 
@@ -139,8 +139,8 @@
                         <select class="form-control" name="select" id="select">
                            <option value="Breast Cancer">Breast Cancer</option>
                            <option value="Reproductive Health">Reproductive Health</option>
-                           <option value="Men">Exercise and Fitness</option>
-                           <option value="Exercise and Fitness">Diet</option>
+                           <option value="Exercise and Fitness">Exercise and Fitness</option>
+                           <option value="Diet">Diet</option>
                            <option value="Mental Health">Mental Health</option>
                            <option value="Fertility Issues">Fertility Issues</option>
 
@@ -219,8 +219,8 @@ mysqli_select_db($con,"forum");
            
 date_default_timezone_set('Asia/Kolkata');                                          //TIME
 
-$timestamp = time();
-$date_time = date("d-m-Y (D) H:i:s", $timestamp);
+$date_time = time();
+//$date_time = date("d-m-Y (D) H:i:s", $timestamp);
            
            
            $insert_query = "insert into forum (question, description, author, email, topic, time) values ('$qu','$de','$au','$em','$se','$date_time')";

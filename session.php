@@ -22,9 +22,9 @@ if (isset($_SESSION['UserFullName'])!=null){
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
 							<li><a  href="home.php">Home</a></li>
-							<li><a data-scroll href="aboutus.html">About us</a></li>
+							<li><a data-scroll href="about_us.html">About us</a></li>
 							<li><a data-scroll href="events.php">Events</a></li>
-							<li><a data-scroll href="#blogs">Blogs</a></li>
+							<li><a data-scroll href="blog.php">Blogs</a></li>
 							<li><a data-scroll href="forum.php">Forum</a></li>
 							<li><a data-scroll href="my_profile.php">Profile</a></li>
 							<li><a data-scroll href="change_password.php">Change Password</a></li>
@@ -60,10 +60,9 @@ if (isset($_SESSION['UserFullName'])!=null){
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
 							<li><a href="home.php">Home</a></li>
-							<li><a data-scroll href="aboutus.html">About us</a></li>
+							<li><a data-scroll href="about_us.html">About us</a></li>
 							<li><a data-scroll href="events.php">Events</a></li>
-							<li><a data-scroll href="#blogs">Blogs</a></li>
-							<li><a data-scroll href="forum.php">Forum</a></li>
+							<li><a data-scroll href="blog.php">Blogs</a></li><li><a data-scroll href="forum.php">Forum</a></li>
 							<li><a data-scroll href="my_profile.php">Profile</a></li>
 							<li><a data-scroll href="change_password.php">Change Password</a></li>
 							<li><a data-scroll href="logout.php">Logout</a></li>

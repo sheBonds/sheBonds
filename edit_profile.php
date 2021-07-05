@@ -136,7 +136,7 @@
       </div> -->
 	<!-- END LOADER -->
 
-	<div id="service" class="services wow fadeIn">
+	<div id="service" class="services wow fadeIn" style="margin-top: 10rem;">
 		<div class="container">
 			<div class="row">
 
@@ -172,8 +172,8 @@
 										<input type="file" class="form-control" name="picture">
 									</div>
 
-									<input type="submit" name="editpicture" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type="reset" name="cancel" value="Cancel">
+									<input type="submit" name="editpicture" value="Save" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1">&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="reset" name="cancel" value="Cancel" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1">
 
 								</form>
 							</div>
@@ -202,9 +202,9 @@
 										<input type="text" name="username" size="30" class="form-control" required>
 									</div>
 									<!-- </tr> -->
-
-									<input type="submit" name="editname" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type="reset" name="cancel" value="Cancel">
+ 
+									<input type="submit" name="editname" value="Save" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1">&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="reset" name="cancel" value="Cancel" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1">
 
 								</form>
 							</div>
@@ -230,8 +230,8 @@
 
 
 
-									<input type="submit" name="editemail" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type="reset" name="cancel" value="Cancel">
+									<input type="submit" name="editemail" value="Save" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1">&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="reset" name="cancel" value="Cancel" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1">
 
 
 								</form>

@@ -297,7 +297,9 @@
                   <div id="bor" class="row">
                      <div class="col-lg-5 ">
                         <img style="padding: 2rem; " id="img"
-                           src="https://lh3.googleusercontent.com/proxy/YLfSsKTRriE06jPt2uwHzg_T5nvDpJd3Fuwmi8zUSZQ_7f6E1-bxuanunri8MVsPVJtMeW_qfs9j9sKh1Bk1ppDctycC_hd7OJK2U949tfQpaXLePq7OPhF84P-uK8aZZq6ar73v"
+                           src=" <?php
+                        echo $row['EventImageLink'];
+                     ?>"
                            alt="loding" class="img-responsive card-img">
 
                      </div>
@@ -323,20 +325,26 @@
                               <?php echo $row['EventTime'] ;?>
                            </li>
 
-                           <li><b>Platform : </b>
-                              <?php echo $row['VenueName']; ?>
+                            <li><b>Duration: </b>
+                              <?php echo $row['EventDuration']." hours "; ?>
                            </li>
 
-                           <li><b>Price: </b>
-                              <?php echo $row['EventTicketPrice']; ?>
+                           <li><b>Platform : </b>
+                              <?php echo "Google Meet /Zoom"; ?>
                            </li>
+
+                           <li><b>Tickets Left: </b>
+                              <?php echo $row['EventTicketTotal']- $row['EventTicketSold']; ?>
+                           </li>
+
+                          
 
                            <li><b>Category: </b>
-                              <?php echo ['EventCategory'];?>
+                              <?php echo $row['EventCategory'];?>
                            </li>
 
                            <li><b>PreRequi: </b>
-                              <?php echo ['EventCategory']; ?>
+                              <?php echo $row['EventPrerequisite']; ?>
                            </li>
                            <hr width="auto" size="4" style="background: #808000">
                         </ul>
@@ -348,7 +356,7 @@
                   <hr width="auto" size="4" style="background: #808000">
                   <!-- <input type="submit" name="#message" value="Book Seat!"
                   class="btn btn-light btn-radius btn-brd grd1 effect-1" /> -->
-                  <button type="submit" class="btn btn-success" data-toggle="modal"
+                  <button type="submit" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1"data-toggle="modal"
                      data-target="#message">Book Seat!</button>
 
                   <!-- <input onclick=" #myModal" id="submitButton" class="btn small" title="Register!"> -->
@@ -362,17 +370,17 @@
                         <div class="modal-content">
                            <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
-                              <h4 class="modal-title">Join Us In Our Next Trip </h4>
-                           </div>
-                           <div class="modal-body">
-                              <form action="event_detail.php" class="bg-light" method="post">
-                                 <h4 style="height: 20px;">
+                               <h4 style="height: 20px;">
                                     <input style="border: none ; text-align: center;" class='event_name'
                                        id="joineventname" type='text' name='joineventname'
                                        value='<?php echo $row["EventName"] ; ?>' hidden>
                                     <?php echo $row["EventName"] ; ?>
 
                                  </h4>
+                           </div>
+                           <div class="modal-body">
+                              <form action="event_detail.php" class="bg-light" method="post">
+                                
                                  <div class="form-group">
                                     <label for="user" class="font-weight-bold"> Name: </label>
                                     <input type="text" name="name" class="form-control" id="name" autocomplete="off"
@@ -407,14 +415,14 @@
 
                                  </div>
 
-                                 <input type="submit" name="join" value="submit" class="btn btn-success"
+                                 <input type="submit" name="join" value="submit" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1"
                                     autocomplete="off">
 
 
                               </form>
                            </div>
                            <div class="modal-footer">
-                              <button type="submit" name="join" class="btn btn-default"
+                              <button type="submit" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1" name="join" class="btn btn-default"
                                  data-dismiss="modal">Cancle</button>
                            </div>
                         </div>

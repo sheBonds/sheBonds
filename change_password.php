@@ -139,7 +139,7 @@
 
 </head>
 
-<body class="clinic_version">
+<body class="clinic_version" style="margin-top:15rem;">
    <div id="service" class="services wow fadeIn">
       <div class="container">
          <div class="row message-box">
@@ -167,10 +167,18 @@
                         required>
                   </div>
                   <br><br><br>
-                  <input type="submit" name="change" value="Save" class="btn small" title="Register!">
+                  <br>
+                  <br>
+
+                  <hr>
+
+                  <input type="submit" name="change" value="Save"
+                  class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1" >
+
+                  
 
 
-                  <input type="reset" class="btn small" name="cancel" value="Cancel">
+                  <input type="reset"  name="cancel" value="Cancel" class="btn btn-medium btn-radius btn-brd btn1 effect-1 grd1">
 
                </form>
             </div>
